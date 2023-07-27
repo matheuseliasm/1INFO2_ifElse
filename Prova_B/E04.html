@@ -9,9 +9,20 @@
     */
     
     //Entrada
-
-
+    const residente = Number(prompt(`Informe quantas pessoas tem em sua residencia`))
+    const litros = Number(prompt(`Informe quantos litros cada pessoa da residencia gasta?`))
+    const cal = residente/litros
     //Processamento
+    if ( cal > 4000) {
+        alert(`A sua conta mensalmente tera um acrecimo de ${cal * 0.15 } de agua`)
+    }
+    else if (cal > 5000) {
+        alert(`A sua conta mensalmente tera um acrecimo de ${ cal * 0.3}`)
+    }
+    else if (cal < 4000) {
+        alert(`Parabens por uso conciente!`)
+    }
+  
 
 
     //Saída

@@ -1,17 +1,32 @@
 <script>
-    /*
+  /*
     Problema: Compra de mudas para plantar
     Um viveiro de mudas vende mudas de plantas por R$ 1,30 cada. Se o cliente comprar mais de 15 mudas, o viveiro dá um desconto de 15% no valor total da compra. Se o cliente comprar mais de 50 mudas, o viveiro dá um desconto de 25% no valor total da compra.
     Peça para o usuário informar quantas mudas ele deseja comprar. Calcule e apresente o valor total que o usuário deverá pagar pelas mudas.
     Também pergunte se pagará em dinheiro. Se o pagamento for em dinheiro, o viveiro dá mais 5% de desconto no valor total da compra.
     */
-    
-    //Entrada
 
+  //Entrada
+  const mudas = Number(
+    prompt(`Informe quantas mudas deseja comprar?`.replace(".", ","))
+  );
+  const pagamento = Number(
+    prompt(`Pagara em dinheiro?.`))
+  ;
+  //Processamento
+  if (mudas > 15 && pagamento == "não") {
+    const calculo  = mudas * 0.15;
+    alert(`voce devera pagar ${calculo}`)
+  }
+  else if (mudas > 15 && pagamento == "sim") {
+    const cal = mudas * 1.3
+    const ca2 = cal * 0.5
+    alert(`voce devera pagar ${ca2}`)
+  }
+  else if (mudas > 50 && pagamento == "não") {
+    const conta = mudas * 0.25
 
-    //Processamento
+  }
 
-
-    //Saída
-
+  //Saída
 </script>

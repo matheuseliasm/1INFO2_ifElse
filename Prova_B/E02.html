@@ -8,11 +8,18 @@
     */
     
     //Entrada
-
-
+    const litros = Number(prompt(`Informe quantos litros gasta por dia?`))
+    const comb = Number(prompt(`Informe quantos litros gasta mensalmente?`))
     //Processamento
-
-
+    if (comb > 300) {
+       alert(`mude sua residencia para araquari`)
+    }
+    else if (comb < 300) {
+        alert(`continue morando em joinvile`)
+    }
     //Saída
+    else {
+        alert(`Informe apenas numeros   `)
+    }
 
 </script>
